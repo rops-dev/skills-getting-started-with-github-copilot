@@ -39,6 +39,38 @@
         </form>
         <div id="message" class="hidden"></div>
       </section>
+
+      <section id="calories-calculator">
+        <h3>🥗 Calorie Calculator</h3>
+
+        <div id="meal-builder">
+          <h4>Build Your Meal</h4>
+          <div id="meal-items">
+            <!-- Meal rows will be added here -->
+          </div>
+          <button type="button" id="add-ingredient-btn">+ Add Ingredient</button>
+          <button type="button" id="calculate-btn" style="margin-left:10px;">Calculate Calories</button>
+          <div id="calories-result" class="hidden"></div>
+        </div>
+
+        <hr style="margin: 24px 0;" />
+
+        <div id="add-ingredient-form-section">
+          <h4>Add New Ingredient</h4>
+          <form id="add-ingredient-form">
+            <div class="form-group">
+              <label for="new-ingredient-name">Ingredient Name:</label>
+              <input type="text" id="new-ingredient-name" required placeholder="e.g. Quinoa" />
+            </div>
+            <div class="form-group">
+              <label for="new-ingredient-calories">Calories per 100g:</label>
+              <input type="number" id="new-ingredient-calories" required min="0" placeholder="e.g. 120" />
+            </div>
+            <button type="submit">Add Ingredient</button>
+          </form>
+          <div id="add-ingredient-message" class="hidden"></div>
+        </div>
+      </section>
     </main>
 
     <footer>
