@@ -142,3 +142,48 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Calorie Calculator styles */
+#calories-calculator {
+  max-width: 600px;
+}
+
+.meal-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.meal-row select {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.meal-row input[type="number"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.remove-meal-row-btn {
+  background-color: #c62828;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.remove-meal-row-btn:hover {
+  background-color: #e53935;
+}
+
+#calories-result {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 4px;
+  line-height: 1.8;
+}
